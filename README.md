@@ -34,6 +34,20 @@
 GET /api/v{version}/ports 
   ```
   
+  **Output**
+  
+  ```
+  {
+  "name": "قرچک",
+  "province": "تهران ",
+  "countis": "دماوند",
+  "latitude": "35.6892",
+  "longitude": "51.3890",
+  "key": 1
+}
+  
+  ```
+  
   <div dir='rtl'>
   پارامتر های floor,alley, street, plaque,  دلبخواه می باشد و این زمان نیازی به پر کردن آن ها نیست. 
 
