@@ -31,7 +31,7 @@
   </div>
   
   ```
-GET /api/v{version}/ports 
+GET /api/v{version}/ports ?province={province}&countis={countis}
   ```
   
   **Output**
@@ -51,6 +51,5 @@ GET /api/v{version}/ports
   <div dir='rtl'>
   پارامتر های floor,alley, street, plaque,  دلبخواه می باشد و در این زمان نیازی به پر کردن آن ها نیست. 
 
-سپس با گرفتن موقعیت مکانی ترمینال را مانند نحوه تحویل بسته دیگر یعنی (destination) روی نقشه نمایش داده شود.
 </div>
 
