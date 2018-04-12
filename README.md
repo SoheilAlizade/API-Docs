@@ -1,7 +1,10 @@
-
+<div dir='rtl'>
 **مراحل ثبت مقصد بسته**
-
+  </div>
+  ```
 POST  /api/v{version}/post-pack 
+  
+  ```
 <div dir='rtl'>
 آدرس بالا دارای یک پارمتر به نام destination  می باشد که دارای پامتر های زیر است.
   </div>
