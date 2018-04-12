@@ -12,7 +12,7 @@
   </div>
   
   ```
-  {
+ {
     "phone_number": "string",
     "reciver_name": "string",
     "province": "string",
@@ -23,7 +23,7 @@
     "plaque": "string",
     "latitude": "string",
     "longitude": "string"
-  }
+ }
   ```
   
 <div dir='rtl'>
@@ -37,7 +37,7 @@ GET /api/v{version}/ports
   **Output**
   
   ```
-  {
+{
   "name": "قرچک",
   "province": "تهران ",
   "countis": "دماوند",
@@ -51,6 +51,6 @@ GET /api/v{version}/ports
   <div dir='rtl'>
   پارامتر های floor,alley, street, plaque,  دلبخواه می باشد و این زمان نیازی به پر کردن آن ها نیست. 
 
-سپس با گرفتن موقعیت مکانی ترمینال مانند نحوه تحویل بسته دیگر یعنی ((destination روی نقشه نمایش داده شود.
+سپس با گرفتن موقعیت مکانی ترمینال مانند نحوه تحویل بسته دیگر یعنی (destination) روی نقشه نمایش داده شود.
 </div>
 
