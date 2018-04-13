@@ -214,7 +214,7 @@ GET /api/v{version}/payment/balance-link
   "url": "http://google.com",
   "params": [
     "user_key",
-    "device"
+    "device" // "ios" or "android"
   ],
   "method": "GET"
 }
@@ -236,3 +236,9 @@ GET /api/v{version}/account/current-user
   "user_key": "08fbcf40be9fa4da146339e5bd03a52e"
 }
 ```
+
+<div dir='rtl'>
+سپس user_key دریافت شده به را به همراه device به لینک ارئه شده بفرستید.
+ <br>
+درون device سیستم عامل موبایل را قرار دهید.
+</div>
