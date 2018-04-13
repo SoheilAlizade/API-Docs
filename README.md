@@ -219,3 +219,20 @@ GET /api/v{version}/payment/balance-link
   "method": "GET"
 }
 ```
+<div dir='rtl'>
+مقادیر params و method ثابت می باشند ولی url به صورت Dynamic است.
+
+پس از انجام این کار پارمتر user_key را از طریق لینک زیر دریافت کنید .
+
+این لینک کلید کاربر جاری را به شما ارئه می دهد.
+</div>
+
+```
+GET /api/v{version}/account/current-user 
+```
+
+```
+{
+  "user_key": "08fbcf40be9fa4da146339e5bd03a52e"
+}
+```
