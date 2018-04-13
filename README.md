@@ -127,6 +127,17 @@ PUT /api/v{version}/post-pack/accept
   "is_cash_payment": true // نقدی بودن پرداخت
 }
 ```
+**Response Headers**
+
+{
+  "cache-control": "no-cache",
+  "content-length": "85",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Fri, 13 Apr 2018 11:40:46 GMT",
+  "expires": "-1",
+  "pragma": "no-cache",
+  "x-created-postpack-key": "c69add97c04f3e0af4f639e5d0fb9ea8"
+}
 
 <div dir='rtl'>
 مقدار  x-created-postpack-key را درون پارامتر string_post_pack_key قرار دهید.
