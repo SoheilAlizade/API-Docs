@@ -142,4 +142,26 @@ PUT /api/v{version}/post-pack/accept
 
 <div dir='rtl'>
 مقدار  x-created-postpack-key را درون پارامتر string_post_pack_key قرار دهید.
+<br>
+پس از ارسال پارامتر ها و دریافت 200 حال باید منتظر دریافت یک راننده باشید. در صورتی که یک راننده آن را تایید یا کنسل کند یک notification به شما ارسال می شود که حاوی داده های زیر می باشد
+</div>
+
+```
+
+{
+    "driver": {
+        "dirver_type": "موتور",
+        "phone_number": "09198143732",
+        "photo_url": "https://i.stack.imgur.com/4PrQA.jpg"
+    },
+    "has_driver": false, // آیا راننده دارد ؟
+    "is_canceled": false // آیا کنسل شده است ؟
+}
+
+```
+
+<div dir='rtl'>
+
+dirver_type نوع وسیله نقیله راننده می باشد که به صورت فارسی نمایش داده می شود
+
 </div>
