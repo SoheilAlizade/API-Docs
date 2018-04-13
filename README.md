@@ -96,17 +96,15 @@ get /api/v{version}/post-pack/insurance-values
 {
   "content": "string",
   "description": "string",
-  "pack_count": 0,           // تعداد بسته
-  "is_packing": true,        // بسته بندی شود یا خیر
-  "pay_at_origin": true,     // پرداخت در مبدا
-  "is_insurance": true,      // آیا بیمه شود
-  "insurance_value_key": 0,  // اگر بیمه بود کلید رنج قیمت آن را قراردهید
-  "pack_type_key": 0,        // نوع بسته 
-  "reciver_category": "string", 
+  "pack_count": 0,               // تعداد بسته
+  "is_packing": true,            // بسته بندی شود یا خیر
+  "pay_at_origin": true,         // پرداخت در مبدا
+  "is_insurance": true,          // آیا بیمه شود
+  "insurance_value_key": 0,      // اگر بیمه بود کلید رنج قیمت آن را قراردهید  
+  "pack_type_key": 0,            // نوع بسته 
+  "reciver_category": "string",  // "port" or "destination"
   "package_value": "string",
   "weight_key": 0
 }
 
 ```
-
-نوع دریافت بسته که دو گزینه دارد یکی "port" و دیگری "destination"  می باید
