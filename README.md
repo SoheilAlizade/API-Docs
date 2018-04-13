@@ -67,7 +67,7 @@ GET /api/v{version}/ports ?province={province}&countis={countis}
 **API Address To Get insurance values**
 
 ```
-get /api/v{version}/post-pack/insurance-values 
+GET /api/v{version}/post-pack/insurance-values 
 ```
 
 **Output**
@@ -197,3 +197,25 @@ Parameters
  <br>
 اگر 409 دریافت کردید به این معنی است که کیف پول کاربر اعتبار کافی برای پرداخت هزینه بسته را ندارد و باید کیف پول خود را شارژ کند.
 </div>
+
+<br>
+<br>
+
+<div dir='rtl'>
+برای شارژ کیف پول از طریق آدرس زیر یک لینک به همراه جزئیات ارسالی برای شما ارسال می شود.
+</div>
+
+```
+GET /api/v{version}/payment/balance-link 
+```
+
+```
+{
+  "url": "http://google.com",
+  "params": [
+    "user_key",
+    "device"
+  ],
+  "method": "GET"
+}
+```
