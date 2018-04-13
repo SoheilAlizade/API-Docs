@@ -108,3 +108,26 @@ get /api/v{version}/post-pack/insurance-values
 }
 
 ```
+
+<div dir='rtl'>
+
+پس از این که پارامتر های مورد نظر را POST کردید و کد 201 دریافت کردید. حال لازم است سراغ مرحله تایید نهایی بسته برویم  و از آدرس زیر استفاده کنیم. بعد از ثبت بسته یک header به شما ارئه می شود که نام آن x-created-postpack-key می باید برای تایید بسته به آن نیاز داریم.
+</div>
+
+```
+PUT /api/v{version}/post-pack/accept 
+```
+
+**Parameters**
+
+```
+{
+  "string_post_pack_key": "string" 
+  "pay_at_origin": true, // پرداخت در محل
+  "is_cash_payment": true // نقدی بودن پرداخت
+}
+```
+
+<div dir='rtl'>
+مقدار  x-created-postpack-key را درون پارامتر string_post_pack_key قرار دهید.
+</div>
