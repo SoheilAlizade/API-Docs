@@ -242,3 +242,71 @@ GET /api/v{version}/account/current-user
  <br>
 درون device سیستم عامل موبایل را قرار دهید.
 </div>
+<br>
+<br>
+
+<div dir='rtl'>
+برای به دست آوردن پست ثبت شده از آدرس زیر استفاده کنید و به جای پارامتر key مقدار x-created-postpack-key را قرار بدید.
+</div>
+
+```
+GET /api/v{version}/post-pack/created/{key} 
+```
+
+```
+{
+  "content": "string",
+  "description": "string",
+  "pack_count": 0,
+  "price": 53316464,
+  "is_packing": true,
+  "pay_at_origin": true,
+  "pack_explain": "سفارش شما به تعداد 0 بسته و میانگین وزن کل بین 100 تا 200 کیلوگرم شامل string  به ارزش   با بیمه کالارسان  و بسته بندی شرکت ثبت گردید.",
+  "reciver_category": "port",
+  "is_cash_payment": false,
+  "is_accepted": false,
+  "status": "reciver",
+  "is_closed": false,
+  "is_insurance": true,
+  "insurance_value": null,
+  "pack_type": {
+    "name": "سبک",
+    "description": "توضیح",
+    "key": 1
+  },
+  "origin": {
+    "address": " استان string شهر string خیابان string کوچه string پلاک string طبقه string",
+    "province": "string",
+    "city": "string",
+    "street": "string",
+    "plaque": "string",
+    "latitude": "string",
+    "longitude": "string",
+    "floor": "string",
+    "alley": "string",
+    "key": 11
+  },
+  "destination": {
+    "phone_number": "string",
+    "reciver_name": "string",
+    "address": " استان string شهر string خیابان string کوچه string پلاک string طبقه string",
+    "province": "string",
+    "city": "string",
+    "street": "string",
+    "plaque": "string",
+    "latitude": "string",
+    "longitude": "string",
+    "floor": "string",
+    "alley": "string",
+    "key": 11
+  },
+  "weight": {
+    "min": 100,
+    "max": 200,
+    "item": "بین 100 تا 200 کیلو گرم",
+    "key": 1
+  },
+  "created_date": "1523619645",
+  "key": 11
+}
+```
