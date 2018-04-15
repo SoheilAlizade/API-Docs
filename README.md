@@ -61,7 +61,7 @@ GET /api/v{version}/ports ?province={province}&countis={countis}
 </div>
 <br>
 <div dir='rtl'>
-هنگام ثبت بسته یک گزینه برای بیمه شدن یا نشدن بسته وجود دارد که نام پارامتر آن is_insurance می باشد. زمانی کاربر گزینه بیشه شدن را تایید که باید یک رنج قیمتی برای این بسته ثبت شود که. برای این کار باید توسط آدرس زیر خروجی مورد نظر را دریافت کرده و سپس مقدار key دریافتی را درون insurance_value_key قرار دهید.
+هنگام ثبت بسته یک گزینه برای بیمه شدن یا نشدن بسته وجود دارد که نام پارامتر آن IsInsurance می باشد. زمانی کاربر گزینه بیشه شدن را تایید که باید یک رنج قیمتی برای این بسته ثبت شود که. برای این کار باید توسط آدرس زیر خروجی مورد نظر را دریافت کرده و سپس مقدار key دریافتی را درون InsuranceValueId قرار دهید.
 </div>
 
 **API Address To Get insurance values**
@@ -85,7 +85,7 @@ GET /api/v{version}/post-pack/insurance-values
 }
 ```
 <div dir='rtl'>
- مقدار item را به کاربر نمایش دهید و بر اساس انتخاب آن key در insurance_value_key قرار بدید.
+ مقدار item را به کاربر نمایش دهید و بر اساس انتخاب آن key در InsuranceValueId قرار بدید.
 </div>
 
 <div dir='rtl'>
@@ -98,13 +98,13 @@ GET /api/v{version}/post-pack/insurance-values
   "Description": "string",
   "PackCount": 0,               // تعداد بسته
   "IsPacking": true,            // بسته بندی شود یا خیر
-  "pay_at_origin": true,         // پرداخت در مبدا
+  "PayAtOrigin": true,         // پرداخت در مبدا
   "IsInsurance": true,          // آیا بیمه شود
   "InsuranceValueId": 0,      // اگر بیمه بود کلید رنج قیمت آن را قراردهید  
   "PackTypeId": 0,            // نوع بسته 
   "ReciverCategoryString": "string",  // "port" or "destination"
  
-  "weight_key": 0
+  "WeightId": 0
 }
 
 ```
@@ -122,9 +122,9 @@ PUT /api/v{version}/post-pack/accept
 
 ```
 {
-  "string_post_pack_key": "string" 
-  "pay_at_origin": true, // پرداخت در محل
-  "is_cash_payment": true // نقدی بودن پرداخت
+  "StringPostPackKey": "string" 
+  "PayAtOrigin": true, // پرداخت در محل
+  "IsCashPayment": true // نقدی بودن پرداخت
 }
 ```
 **Response Headers**
@@ -141,7 +141,7 @@ PUT /api/v{version}/post-pack/accept
 ```
 
 <div dir='rtl'>
-مقدار  x-created-postpack-key را درون پارامتر string_post_pack_key قرار دهید.
+مقدار  x-created-postpack-key را درون پارامتر StringPostPackKey قرار دهید.
 <br>
 پس از ارسال پارامتر ها و دریافت 200 حال باید منتظر دریافت یک راننده باشید. در صورتی که یک راننده آن را تایید یا کنسل کند یک notification به شما ارسال می شود که حاوی داده های زیر می باشد
 </div>
@@ -173,7 +173,7 @@ dirver_type نوع وسیله نقیله راننده می باشد که به ص
 پرداخت مبلغ بسته
 </b>
 <br>
-اگر نحوه پرداخت نقدی بود در مرحله قبلی is_cash_payment را برابرقرار می دهیم true . اگر نه کاربر قصد پرادخت از اعتبار خود را داشت باید از آدرس زیر استفاده کنید:
+اگر نحوه پرداخت نقدی بود در مرحله قبلی IsCashPayment را برابرقرار می دهیم true . اگر نه کاربر قصد پرادخت از اعتبار خود را داشت باید از آدرس زیر استفاده کنید:
 </div>
 
 ```
@@ -184,7 +184,7 @@ Parameters
 
 ```
 {
-  "string_post_pack_key": "string"
+  "PostPackKey": "string"
 }
 ```
 
