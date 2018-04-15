@@ -13,21 +13,21 @@
   
   ```
  {
-    "phone_number": "string",
-    "reciver_name": "string",
-    "province": "string",
-    "city": "string",
-    "floor": "string",
-    "alley": "string",
-    "street": "string",
-    "plaque": "string",
-    "latitude": "string",
-    "longitude": "string"
+    "PhoneNumber": "string",
+    "ReciverName": "string",
+    "Province": "string",
+    "City": "string",
+    "Floor": "string",
+    "Alley": "string",
+    "Street": "string",
+    "Plaque": "string",
+    "Latitude": "string",
+    "Longitude": "string"
  }
   ```
   
 <div dir='rtl'>
-زمانی که کاربر نحوه تحویل بسته (reciver_category)  را  ترمینال (port) انتخاب کند. شما باید ابتدا استان و شهر انتخاب شده کاربر را به آدرس زیر بفرستید و خروجی نمایش داده را دریافت کنید. خروجی زیر شامل  latitude و longitude ترمینال می باشد و پس از دریافت باید آن ها را درون destination قرار بدهید. 
+زمانی که کاربر نحوه تحویل بسته (ReciverCategoryString)  را  ترمینال (port) انتخاب کند. شما باید ابتدا استان و شهر انتخاب شده کاربر را به آدرس زیر بفرستید و خروجی نمایش داده را دریافت کنید. خروجی زیر شامل  latitude و longitude ترمینال می باشد و پس از دریافت باید آن ها را درون destination قرار بدهید. 
   </div>
   
   ```
@@ -94,16 +94,16 @@ GET /api/v{version}/post-pack/insurance-values
 
 ```
 {
-  "content": "string",
-  "description": "string",
-  "pack_count": 0,               // تعداد بسته
-  "is_packing": true,            // بسته بندی شود یا خیر
+  "Content": "string",
+  "Description": "string",
+  "PackCount": 0,               // تعداد بسته
+  "IsPacking": true,            // بسته بندی شود یا خیر
   "pay_at_origin": true,         // پرداخت در مبدا
-  "is_insurance": true,          // آیا بیمه شود
-  "insurance_value_key": 0,      // اگر بیمه بود کلید رنج قیمت آن را قراردهید  
-  "pack_type_key": 0,            // نوع بسته 
-  "reciver_category": "string",  // "port" or "destination"
-  "package_value": "string",
+  "IsInsurance": true,          // آیا بیمه شود
+  "InsuranceValueId": 0,      // اگر بیمه بود کلید رنج قیمت آن را قراردهید  
+  "PackTypeId": 0,            // نوع بسته 
+  "ReciverCategoryString": "string",  // "port" or "destination"
+ 
   "weight_key": 0
 }
 
