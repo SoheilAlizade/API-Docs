@@ -320,15 +320,15 @@ GET /api/v{version}/post-pack/created/{key}
 
 
 ```
-put /api/v{version}/post-pack/{key}/cancel 
+PUT /api/v{version}/post-pack/{key}/cancel 
 
 ```
  <div dir='rtl'>
- برای لغو نیاز یک key به آدرس موردنظر بفرستیم که میتوان آن را همانند مراحل قبل به درست آورد.
+ برای لغو نیاز است یک key به آدرس موردنظر بفرستیم که میتوان آن را همانند مراحل قبل به دست آوریم.
 
- در این قسمت از هدر x-created-postpack-key برای مقدار دهی key استفاده کنید که هتگام accpet کردن بسته أن را دریافت کردید.
-
+ در این قسمت از هدر x-created-postpack-key برای مقدار دهی key استفاده کنید که هنگام accept  کردن بسته آن را دریافت کردید.
 
  </div>
 
 
+	
