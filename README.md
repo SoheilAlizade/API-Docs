@@ -321,8 +321,8 @@ GET /api/v{version}/post-pack/created/{key}
 
 ```
 PUT /api/v{version}/post-pack/{key}/cancel 
-
 ```
+
  <div dir='rtl'>
  برای لغو نیاز است یک key به آدرس موردنظر بفرستیم که میتوان آن را همانند مراحل قبل به دست آوریم.
 
@@ -330,5 +330,15 @@ PUT /api/v{version}/post-pack/{key}/cancel
 
  </div>
 
+ <br>
+ <br>
 
+ <div dir='rtl'>
+لینک درگاه (اصلاح شده)
+
+ </div>
+
+ ```
+GET /api/v{version}/payment/balance-link 
+ ```
 	
