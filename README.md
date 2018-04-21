@@ -310,3 +310,25 @@ GET /api/v{version}/post-pack/created/{key}
   "key": 11
 }
 ```
+
+<div dir='rtl'>
+
+لغو بسته 
+
+</div>
+
+
+
+```
+put /api/v{version}/post-pack/{key}/cancel 
+
+```
+ <div dir='rtl'>
+ برای لغو نیاز یک key به آدرس موردنظر بفرستیم که میتوان آن را همانند مراحل قبل به درست آورد.
+
+ در این قسمت از هدر x-created-postpack-key برای مقدار دهی key استفاده کنید که هتگام accpet کردن بسته أن را دریافت کردید.
+
+
+ </div>
+
+
