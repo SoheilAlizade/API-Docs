@@ -342,3 +342,10 @@ PUT /api/v{version}/post-pack/{key}/cancel
 GET /api/v{version}/payment/balance-link 
  ```
 	
+	**Response**
+
+	```
+	{
+  "url": "string"
+}
+	```
